@@ -157,9 +157,9 @@ export default function Hero() {
 
 
 
-      {/* RIGHT SIDE — SINGLE CLEAN BOUNCING IMAGE */}
+      {/* RIGHT SIDE  */}
       <motion.img
-        src="/profile.jpg"
+        src="/profile.png"
         alt="Karthikha"
         className="w-40 h-40 md:w-60 md:h-60 rounded-full object-cover border-4 border-retro-secondary dark:border-midnight-primary shadow-xl"
         initial={{ opacity: 0, x: 40 }}
