@@ -6,7 +6,7 @@ const projects = [
     description:
       "A full MERN platform for college departments to manage syllabus, notes, CIAT, and semester papers with Cloudinary storage and admin dashboard.",
     tech: ["React", "Node.js", "Express", "MongoDB", "Cloudinary",'JWT'],
-    github: "https://github.com/karthikha-shree/cscoursenest.git",
+    github: "https://github.com/karthikha-shree/csnest.git",
     live: "",
   },
   {
