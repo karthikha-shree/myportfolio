@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 
 export default function ThemeToggle() {
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState(
+    localStorage.getItem("theme") || "dark"
+  );
 
   useEffect(() => {
     if (theme === "dark") {
@@ -9,11 +11,16 @@ export default function ThemeToggle() {
     } else {
       document.documentElement.classList.remove("dark");
     }
+
+    localStorage.setItem("theme", theme);
   }, [theme]);
 
   return (
     <button
-      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+      onClick={() =>
+        setTheme(theme === "dark" ? "light" : "dark")
+        
+      }
       className="p-2 rounded-xl bg-slate-200 dark:bg-slate-700 dark:text-white text-black"
     >
       {theme === "dark" ? "🌞 Light Mode" : "🌙 Dark Mode"}
